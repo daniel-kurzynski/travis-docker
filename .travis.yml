@@ -3,4 +3,4 @@ language: minimal
 services:
   - docker
 
-script: docker run hello-world
+script: ./cx-server help
