@@ -5,6 +5,8 @@ services:
 
 before_install:
   - chmod +x ./cx-server/cx-server
+  - cd cx-server && ./cx-server update script || echo "Could not be updated "
   - cd cx-server && ./cx-server help
+  - cd cx-server && ./cx-server start
 
 script: docker ps
