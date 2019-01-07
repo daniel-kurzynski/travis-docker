@@ -5,6 +5,6 @@ services:
 
 before_install:
   - chmod +x ./cx-server/cx-server
-  - ./cx-server/cx-server help
+  - cd cx-server && ./cx-server help
 
 script: docker ps
