@@ -3,4 +3,8 @@ language: minimal
 services:
   - docker
 
-script: ./cx-server/cx-server help
+before_install:
+  - chmod +x ./cx-server/cx-server
+  - ./cx-server/cx-server help
+
+script: docker ps
