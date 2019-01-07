@@ -3,4 +3,4 @@ language: minimal
 services:
   - docker
 
-script: ./cx-server help
+script: ./cx-server/cx-server help
